@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>게시글 작성 양식</h1>
+        <form method="POST" action="board_ps.html">
+            <dl>
+                <dt>분류</dt>
+                <dd>
+                    <select name="Type1">
+                        <option value="QnA">Q&A</option>
+                        <option value="buynsell">Buy&Sell</option>
+                        <option value="freetalk">Freetalk</option>
+                    </select>
+                </dd>
+            </dl>
+            <dl>
+                <dt>제목</dt>
+                <dd>
+                    <input type="text" name="text1" required placeholder="제목을 입력하시오.">
+                </dd>
+            </dl>
+            <dl>
+                <dt>작성자</dt>
+                <dd><input type="text" name="text2" required placeholder="작성자를 입력하시오."></dd>
+            </dl>
+            <dl>
+                <dt>내용</dt>
+                <dd><textarea name="text3" rows="20" cols="100">내용을 입력하세요.</textarea></dd>
+            </dl>
+            <dl>
+                <dt>이미지 첨부</dt>
+                <dd>
+                    <input type="file" name="image1" accept="image/*">
+                </dd>
+            </dl>
+            <dl>
+                <dt>파일 첨부</dt>
+                <dd>
+                    <input type="file" name="file1">
+                </dd>
+            </dl>
+            <button type="reset">다시적기</button>
+            <button type="submit">제출하기</button>
+        </form>
+    </body>
+</html>
